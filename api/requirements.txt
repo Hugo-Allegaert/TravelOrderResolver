@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+spacy
+xlrd
+openpyxl
+psycopg2
+matplotlib
+numpy
+pandas
+joblib
+sklearn
