@@ -4,7 +4,7 @@
 
 Build a program that processes voice and text commands to issue an appropriate itinerary.
 More specifically, the software will receive trip orders as an email or a phone recording, and will ouptut at
-least one appropriate travel line that fits the expectations of the customer (using SNCF database).
+least one appropriate travel line that fits the expectations of the customer.
 
 ## Techno
 
@@ -21,7 +21,7 @@ $> docker-compose up --build
 
 *If it's the first time you launch, restore the database with the dump file (database password: postgres) :*
 ```code
-$> psql -h localhost -p 5432 -U postgres sncf < create_database/data_sncf/dumpfile-sncf.sql
+$> psql -h localhost -p 5432 -U postgres travel < create_database/data/database-dump.sql
 ```
 
 

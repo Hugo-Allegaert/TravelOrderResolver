@@ -17,7 +17,7 @@ global conn, cursor
 
 conn = psycopg2.connect(
     host="postgres",
-    database="sncf",
+    database="travel",
     user="postgres",
     password="postgres",
     port="5432")

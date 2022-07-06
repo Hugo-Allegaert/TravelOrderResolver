@@ -13,7 +13,7 @@ services:
     environment:
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "postgres"
-      POSTGRES_DB: "sncf"
+      POSTGRES_DB: "travel"
     ports:
       - "5432:5432"
     expose:
@@ -24,10 +24,10 @@ services:
   frontend:
     restart: always
     build:
-      context: ./front/sncf
+      context: ./front/app
       dockerfile: Dockerfile
     volumes:
-      - ./front/sncf:/app
+      - ./front/app:/app
     environment:
       - SERVICE_NAME=frontend
       - CHOKIDAR_USEPOLLING=true
